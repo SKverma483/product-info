@@ -86,9 +86,7 @@ article {
   height: 20px;
   background-color: black;
 }
-.box:hover{
-  cursor:pointer;
-}
+
 .blue {
   background-color: blue;
 }
