@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 70px;
+}
+p {
+  font-size: 18px;
+}
+.container {
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+  border: 5px solid black;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 1fr;
+  row-gap: 10px;
+}
+.page-head {
+  /* display: inline-block; */
+  /* grid-column: 1/-1; */
+  background-color: rgba(199, 190, 190, 0.253);
+  /* font-size: 25px; */
+  text-align: center;
+  font-style: italic;
+  padding: 5px;
+  position: relative;
+}
+.page-head::after {
+  content: "SALE";
+  font-size: 18px;
+  padding: 3px 10px;
+  color: white;
+  background-color: red;
+  position: absolute;
+  top: -20px;
+  left: -24px;
+}
+.first-head {
+  text-transform: uppercase;
+  font-style: italic;
+}
+article {
+  grid-row: 2/4;
+  display: flex;
+  gap: 40px;
+}
+.section-1 {
+  flex: 1;
+}
+.section-2 {
+  flex: 1;
+}
+.section-3 {
+  flex: 1;
+}
+.mini-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.free-ship {
+  color: grey;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.dress {
+  margin-bottom: 15px;
+}
+.box {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+}
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+.brown {
+  background-color: brown;
+}
+.color-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+a:link,
+a:visited {
+  color: black;
+  background-color: aqua;
+}
+a:hover,
+a:active {
+  color: red;
+  background-color: white;
+  text-decoration: none;
+}
+.second-head {
+  text-transform: uppercase;
+  text-align: center;
+  font-style: italic;
+}
+ul {
+  list-style: none;
+  margin: 15px 0;
+}
+li {
+  padding: 10px;
+  margin-left: 5px;
+}
+footer {
+  margin: 5px;
+}
+.cart {
+  width: 100%;
+  font-size: 16px;
+  padding: 5px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+.cart:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
